@@ -62,7 +62,8 @@ function toConsole(data)
 
 function bondJSON(data){
 //JSON processing data goes here
-	//toConsole(data);
+	//toConsole(data); 
+	$("#films").html("");
 	//$("#output").text(JSON.stringify(data));
 	$.each(data.films, function(i, item){
 		let text = `
@@ -73,10 +74,8 @@ function bondJSON(data){
                 <b>Box Office</b>: ${item.BoxOffice}<br>
                 <b>Writer</b>: ${item.Writer}<br>
  
-                <b>Director</b>: ${item.Director}<br>
-                <b>Producer</b>: ${item.Producer}<br>
-                <b>Composer</b>: ${item.Composer}<br>
-            	<b>Budget</b>: ${item.Budget}<br>
+                <div class="pic"><img src="images/${item.Image}"></div>
+
 				`;
 
 		$("<div></div>").html(text).appendTo("#films");
