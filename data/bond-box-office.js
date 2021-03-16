@@ -8,7 +8,7 @@
 				"Year":2016,
 				"Director":"M. Night Shyamalan",
 				"Producers":"Jason Blum, Marc Bienstock",
-				"Image":"Split.jpeg"
+				"Image":"Split.jpg"
 			  },
               {
 				"Film":24,
